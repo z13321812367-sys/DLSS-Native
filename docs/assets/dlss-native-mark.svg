@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">DLSS Native mark</title>
+  <desc id="desc">A geometric N formed from native GPU frame surfaces.</desc>
+  <defs>
+    <linearGradient id="g" x1="18" y1="18" x2="112" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7FFD1"/>
+      <stop offset=".42" stop-color="#6EF2B0"/>
+      <stop offset=".72" stop-color="#68DAFF"/>
+      <stop offset="1" stop-color="#9A8CFF"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="22" y1="12" x2="104" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78F5AF" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#66DFFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#9F93FF" stop-opacity=".8"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <path d="M38 12H90L116 38V90L90 116H38L12 90V38Z" fill="#090D12" stroke="url(#edge)" stroke-width="3"/>
+  <path d="M24 43V29a5 5 0 0 1 5-5h14M85 24h14a5 5 0 0 1 5 5v14M104 85v14a5 5 0 0 1-5 5H85M43 104H29a5 5 0 0 1-5-5V85" fill="none" stroke="#D9FFE7" stroke-opacity=".35" stroke-width="2.5" stroke-linecap="round"/>
+  <g filter="url(#glow)" fill="url(#g)">
+    <path d="M35 38h14v52H35z"/>
+    <path d="M49 38h13l31 52H80z"/>
+    <path d="M79 38h14v52H79z"/>
+  </g>
+  <path d="M42 46h7M79 82h7" stroke="#06100B" stroke-width="2.2" stroke-linecap="round" opacity=".62"/>
+  <circle cx="103.5" cy="64" r="2.8" fill="#76F7A7"/>
+  <circle cx="24.5" cy="64" r="2.8" fill="#68DAFF"/>
+</svg>
