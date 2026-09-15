@@ -11,6 +11,8 @@
 <h3 align="center">Native RTX video processing for Super Resolution, Frame Generation and HDR-aware workflows.</h3>
 
 <p align="center">
+  <a href="https://github.com/z13321812367-sys/DLSS-Native/releases/tag/v0.1-preview"><strong>Download v0.1 Preview</strong></a>
+  ·
   <a href="https://z13321812367-sys.github.io/DLSS-Native/">Project site</a>
   ·
   <a href="./README.zh-CN.md">中文</a>
@@ -23,6 +25,16 @@
 </p>
 
 ---
+
+## v0.1 Preview
+
+The Windows v0.1 Preview is available as a pre-release.
+
+[Download v0.1 Preview](https://github.com/z13321812367-sys/DLSS-Native/releases/tag/v0.1-preview)
+
+Extract the ZIP and run `start.bat`. The package bundles Python and FFmpeg; no system Python, FFmpeg, CMake, Visual Studio or Windows SDK installation is required.
+
+The public preview includes DLSS Super Resolution and Frame Generation. Neural Rendering / Feature 18 and direct D3D12 → NVENC performance work are not part of this preview.
 
 ## What it does
 
@@ -68,7 +80,7 @@ An output file carrying BT.2020 / ST2084 metadata is not, by itself, proof that 
 
 The integrated baseline has been validated on an **RTX 5060 Ti** with the Unified **ABI4 4.0.0** runtime and the current SR / FG product path.
 
-Performance work on the direct **D3D12 → NVENC** path is still active. Throughput numbers will be published only when the current validation line is complete and reproducible.
+The v0.1 Preview release focuses on the portable SR / FG application workflow. Internal direct D3D12 → NVENC performance work is not part of this public preview.
 
 ## Current status
 
@@ -78,9 +90,9 @@ Performance work on the direct **D3D12 → NVENC** path is still active. Through
 | DLSS Frame Generation | **Available in the current product path** |
 | Unified ABI4 / D3D12 runtime | **Current architecture** |
 | HDR-aware video pipeline | **Current architecture** |
-| Neural Rendering / NR | **Runtime-dependent; disabled when a trusted runtime is unavailable** |
-| Direct D3D12 → NVENC | **Active performance validation** |
-| Public application source / binaries | **Not published yet** |
+| Neural Rendering / NR | **Not included in v0.1 Preview; disabled when a trusted runtime is unavailable** |
+| Direct D3D12 → NVENC | **Internal validation only; not part of v0.1 Preview** |
+| Public application source / binaries | **v0.1 Preview available as a pre-release** |
 
 ## Runtime policy
 
